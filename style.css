@@ -1,0 +1,148 @@
+/* Reset dan Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Tabel Umum */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Section 1: Menu */
+.menu-table {
+    background-color: #f8f9fa;
+}
+
+.menu-table h1 {
+    font-size: clamp(18px, 4vw, 24px);
+    margin: 0;
+}
+
+.menu-item a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: clamp(14px, 3vw, 18px);
+    transition: background-color 0.3s;
+}
+
+.menu-item a:hover {
+    background-color: #e9ecef;
+}
+
+/* Section 2: Judul dan Gambar */
+.content-table {
+    background-color: #fff;
+}
+
+.text-content {
+    text-align: left;
+    vertical-align: top;
+    width: 50%;
+}
+
+.text-content h2 {
+    font-size: clamp(16px, 3.5vw, 22px);
+    margin-top: 0;
+}
+
+.text-content p {
+    font-size: clamp(12px, 2.5vw, 16px);
+}
+
+.image-content {
+    width: 50%;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Section 3: Biodata */
+.biodata-table {
+    background-color: #f8f9fa;
+}
+
+.biodata-table h1 {
+    font-size: clamp(18px, 4vw, 24px);
+}
+
+.biodata-item {
+    width: 33.33%;
+}
+
+.biodata-item h3 {
+    font-size: clamp(14px, 3vw, 18px);
+    margin: 10px 0 5px;
+}
+
+.biodata-item p {
+    font-size: clamp(12px, 2.5vw, 16px);
+    margin: 0;
+}
+
+/* Section 4: Portofolio */
+.portfolio-table {
+    background-color: #fff;
+}
+
+.portfolio-table h1 {
+    font-size: clamp(18px, 4vw, 24px);
+}
+
+.portfolio-item {
+    width: 33.33%;
+}
+
+.portfolio-item h3 {
+    font-size: clamp(14px, 3vw, 18px);
+    margin: 10px 0 5px;
+}
+
+.portfolio-item p {
+    font-size: clamp(12px, 2.5vw, 16px);
+    margin: 0 0 10px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .text-content, .image-content {
+        width: 100%;
+        display: block;
+    }
+    
+    .biodata-item, .portfolio-item {
+        width: 100%;
+        display: block;
+    }
+    
+    .content-table tr, 
+    .biodata-table tr:not(:first-child), 
+    .portfolio-table tr:not(:first-child) {
+        display: block;
+    }
+}
